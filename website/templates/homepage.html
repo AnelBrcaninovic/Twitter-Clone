@@ -1,0 +1,40 @@
+{% extends "layout.html" %} {% block head %}
+<link
+  rel="stylesheet"
+  href="{{url_for('static', filename='css/homepage.css')}}"
+/>
+
+{% endblock %} {% block content %}
+<h1 align="center" class="mt-5 header">Twitter from <b>Wish</b></h1>
+
+{% for tweet in tweets %} {% if tweet %}
+
+<div class="row tweet-box">
+  <div class="col content">"{{tweet.data}}"</div>
+  <div class="col User"><span> {{tweet.username}}</span></div>
+</div>
+
+{% endif %} {% endfor %}
+
+<hr />
+<div class="submitForm">
+  <form method="POST">
+    <h6 style="margin-bottom: 2%">Send your tweet 😁😁:</h6>
+
+    <label for="name" class="form-label">Enter your Name</label>
+    <input type="text" class="form-control" placeholder="Name" name="name" />
+    <label for="name" class="form-label">Enter your tweet:</label>
+
+    <input
+      type="textarea"
+      class="form-control"
+      placeholder="What's on your mind?"
+      name="data"
+    />
+    <div class="submitButton mt-3">
+      <button type="submit" class="btn btn-danger">Submit</button>
+    </div>
+  </form>
+</div>
+<hr />
+{% endblock %}

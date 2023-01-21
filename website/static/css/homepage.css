@@ -1,0 +1,56 @@
+.header {
+  font-size: 300%;
+}
+
+.tweet-box {
+  margin: auto;
+  border: 1px grey solid;
+  border-radius: 20px;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  max-width: 500px;
+}
+.tweet-box .content {
+  margin: 2%;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+.tweet-box .User {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: larger;
+}
+.User span {
+  margin: auto;
+  background: rgba(255, 255, 255, 0.07);
+  padding: 3%;
+  margin: 2%;
+  border-radius: 10px;
+}
+
+.submitForm {
+  margin: auto;
+  margin-top: 3%;
+  margin-bottom: 2%;
+  max-width: 500px;
+}
+
+label {
+  margin-top: 2%;
+  margin-bottom: 0%;
+}
+input {
+  margin: 0%;
+}
+
+.submitButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.submitButton button {
+  font-size: 23px;
+}
